@@ -23,6 +23,9 @@
 		364985D1170D15C600F73891 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364985AC170D15C600F73891 /* Foundation.framework */; };
 		364985D9170D15C600F73891 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 364985D7170D15C600F73891 /* InfoPlist.strings */; };
 		364985DC170D15C700F73891 /* SocialFrameworkSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 364985DB170D15C700F73891 /* SocialFrameworkSampleTests.m */; };
+		364985E6170D15DA00F73891 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364985E5170D15DA00F73891 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		364E40D8170D573400983625 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 364E40D7170D573400983625 /* Accounts.framework */; };
+		364E40DB170D6EFA00983625 /* namekuji700.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 364E40DA170D6EFA00983625 /* namekuji700.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		364985D8170D15C600F73891 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		364985DA170D15C600F73891 /* SocialFrameworkSampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialFrameworkSampleTests.h; sourceTree = "<group>"; };
 		364985DB170D15C700F73891 /* SocialFrameworkSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialFrameworkSampleTests.m; sourceTree = "<group>"; };
+		364985E5170D15DA00F73891 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		364E40D7170D573400983625 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		364E40DA170D6EFA00983625 /* namekuji700.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = namekuji700.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				364E40D8170D573400983625 /* Accounts.framework in Frameworks */,
+				364985E6170D15DA00F73891 /* Social.framework in Frameworks */,
 				364985AB170D15C600F73891 /* UIKit.framework in Frameworks */,
 				364985AD170D15C600F73891 /* Foundation.framework in Frameworks */,
 				364985AF170D15C600F73891 /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +95,9 @@
 		3649859E170D15C600F73891 = {
 			isa = PBXGroup;
 			children = (
+				364E40D9170D6EED00983625 /* Resources */,
+				364E40D7170D573400983625 /* Accounts.framework */,
+				364985E5170D15DA00F73891 /* Social.framework */,
 				364985B0170D15C600F73891 /* SocialFrameworkSample */,
 				364985D4170D15C600F73891 /* SocialFrameworkSampleTests */,
 				364985A9170D15C600F73891 /* Frameworks */,
@@ -158,6 +169,14 @@
 				364985D7170D15C600F73891 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		364E40D9170D6EED00983625 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				364E40DA170D6EFA00983625 /* namekuji700.jpg */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +255,7 @@
 				364985BF170D15C600F73891 /* Default@2x.png in Resources */,
 				364985C1170D15C600F73891 /* Default-568h@2x.png in Resources */,
 				364985C7170D15C600F73891 /* ViewController.xib in Resources */,
+				364E40DB170D6EFA00983625 /* namekuji700.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +367,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -371,7 +391,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -453,6 +473,7 @@
 				364985E1170D15C700F73891 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		364985E2170D15C700F73891 /* Build configuration list for PBXNativeTarget "SocialFrameworkSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +482,7 @@
 				364985E4170D15C700F73891 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
